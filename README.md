@@ -87,82 +87,84 @@ After you have Downloaded and installed Lightstreamer, please go to the "adapter
 
 Please note that to work with fully functionality the [Portfolio Demo](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript) you have to deploy on your Lightstreamer instance the QUOTE_ADAPTER adapter too.
 To allow the two adapters to coexist within the same adapter set, please follow the instructions below:
+
 1. Create a new folder in  "<LS_HOME>/adapters" , let's call it "demo".
 2. Move the "portfolio" and "Stocklist" specific folders to the "demo" one.
 3. Remove the adapter.xml files from respective directories and merge them togheter in a new one into new "demo" folder. Something like this:
 ```xml 
 <?xml version="1.0"?>
-<adapters_conf id="DEMO">
+  <adapters_conf id="DEMO">
 
-  <!-- Mandatory. Define the Metadata Adapter. -->
-  <metadata_provider>
+    <!-- Mandatory. Define the Metadata Adapter. -->
+    <metadata_provider>
 
-    <install_dir>portfolio</install_dir>
+      <install_dir>portfolio</install_dir>
 
-    <!-- Mandatory. Java class name of the adapter. -->
-    <adapter_class>portfolio_demo.adapters.PortfolioMetadataAdapter</adapter_class>
+      <!-- Mandatory. Java class name of the adapter. -->
+      <adapter_class>portfolio_demo.adapters.PortfolioMetadataAdapter</adapter_class>
 
-    <!-- Optional for PortfolioMetadataAdapter.
-         Configuration file for the Adapter's own logging.
-         Logging is managed through log4j. -->
-    <param name="log_config">adapters_log_conf.xml</param>
-    <param name="log_config_refresh_seconds">10</param>
+      <!-- Optional for PortfolioMetadataAdapter.
+           Configuration file for the Adapter's own logging.
+           Logging is managed through log4j. -->
+      <param name="log_config">adapters_log_conf.xml</param>
+      <param name="log_config_refresh_seconds">10</param>
 
-    <!-- Optional, managed by the inherited LiteralBasedProvider.
-         See LiteralBasedProvider javadoc. -->
-    <!--
-    <param name="max_bandwidth">40</param>
-    <param name="max_frequency">3</param>
-    <param name="buffer_size">30</param>
-    <param name="distinct_snapshot_length">10</param>
-    <param name="prefilter_frequency">5</param>
-    <param name="allowed_users">user123,user456</param>
-    -->
+      <!-- Optional, managed by the inherited LiteralBasedProvider.
+           See LiteralBasedProvider javadoc. -->
+      <!--
+      <param name="max_bandwidth">40</param>
+      <param name="max_frequency">3</param>
+      <param name="buffer_size">30</param>
+      <param name="distinct_snapshot_length">10</param>
+      <param name="prefilter_frequency">5</param>
+      <param name="allowed_users">user123,user456</param>
+      -->
 
-    <!-- Optional, managed by the inherited LiteralBasedProvider.
-         See LiteralBasedProvider javadoc. -->
-    <param name="item_family_1">portfolio.*</param>
-    <param name="modes_for_item_family_1">COMMAND</param>
+      <!-- Optional, managed by the inherited LiteralBasedProvider.
+           See LiteralBasedProvider javadoc. -->
+      <param name="item_family_1">portfolio.*</param>
+      <param name="modes_for_item_family_1">COMMAND</param>
+      
+      <param name="item_family_2">item.*</param>
+      <param name="modes_for_item_family_2">MERGE</param>
+
+    </metadata_provider>
+
+    <!-- Mandatory. Define the Data Adapter. -->
+    <data_provider name="PORTFOLIO_ADAPTER">
+
+      <install_dir>portfolio</install_dir>
     
-    <param name="item_family_2">item.*</param>
-    <param name="modes_for_item_family_2">MERGE</param>
+      <!-- Mandatory. Java class name of the adapter. -->
+      <adapter_class>portfolio_demo.adapters.PortfolioDataAdapter</adapter_class>
 
-  </metadata_provider>
+      <!-- Optional for PortfolioDataAdapter.
+           Configuration file for the Adapter's own logging.
+           Leans on the Metadata Adapter for the configuration refresh.
+           Logging is managed through log4j. -->
+      <param name="log_config">adapters_log_conf.xml</param>
 
-  <!-- Mandatory. Define the Data Adapter. -->
-  <data_provider name="PORTFOLIO_ADAPTER">
+    </data_provider>
 
-    <install_dir>portfolio</install_dir>
-  
-    <!-- Mandatory. Java class name of the adapter. -->
-    <adapter_class>portfolio_demo.adapters.PortfolioDataAdapter</adapter_class>
+    <!-- Mandatory. Define the Data Adapter. -->
+    <data_provider name="QUOTE_ADAPTER">
 
-    <!-- Optional for PortfolioDataAdapter.
-         Configuration file for the Adapter's own logging.
-         Leans on the Metadata Adapter for the configuration refresh.
-         Logging is managed through log4j. -->
-    <param name="log_config">adapters_log_conf.xml</param>
+      <install_dir>Stocklist</install_dir>
+    
+      <!-- Mandatory. Java class name of the adapter. -->
+      <adapter_class>stocklist_demo.adapters.StockQuotesDataAdapter</adapter_class>
 
-  </data_provider>
+      <!-- Optional for StockQuotesDataAdapter.
+           Configuration file for the Adapter's own logging.
+          Logging is managed through log4j. -->
+      <param name="log_config">adapters_log_conf.xml</param>
+      <param name="log_config_refresh_seconds">10</param>
 
-  <!-- Mandatory. Define the Data Adapter. -->
-  <data_provider name="QUOTE_ADAPTER">
+    </data_provider>
 
-    <install_dir>Stocklist</install_dir>
-  
-    <!-- Mandatory. Java class name of the adapter. -->
-    <adapter_class>stocklist_demo.adapters.StockQuotesDataAdapter</adapter_class>
-
-    <!-- Optional for StockQuotesDataAdapter.
-         Configuration file for the Adapter's own logging.
-        Logging is managed through log4j. -->
-    <param name="log_config">adapters_log_conf.xml</param>
-    <param name="log_config_refresh_seconds">10</param>
-
-  </data_provider>
-
-</adapters_conf>
+  </adapters_conf>
 ```
+
 
 See Also
 --------
