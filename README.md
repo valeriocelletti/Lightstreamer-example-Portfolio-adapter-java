@@ -172,7 +172,7 @@ See Also
 * TODO: add link to GitHub project of [Lightstreamer Basic Portfolio Demo Client for JavaScript]
 * [Lightstreamer Portfolio Demo Client for JavaScript](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript)
 * [Lightstreamer Portfolio Demo Client for Dojo](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-dojo)
-* [Lightstreamer Stock-List Demo Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)
+* [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)
 
 Lightstreamer Compatibility Notes
 ---------------------------------
