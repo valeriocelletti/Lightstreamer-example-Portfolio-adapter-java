@@ -85,7 +85,7 @@ After you have Downloaded and installed Lightstreamer, please go to the "adapter
  >jar cvf LS_portfolio_metadata_adapter.jar -C tmp_classes src_metadata
 ```
 
-Please note that to work with fully functionality the [Portfolio Demo](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript) you have to deploy on your Lightstreamer instance the QUOTE_ADAPTER adapter too.
+Please note that to work with fully functionality the [Portfolio Demo](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript) you have to deploy on your Lightstreamer instance the QUOTE_ADAPTER adapter too (see [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)).
 To allow the two adapters to coexist within the same adapter set, please follow the instructions below:
 
 1. Create a new folder in  "<LS_HOME>/adapters" , let's call it "demo".
