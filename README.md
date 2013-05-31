@@ -9,8 +9,8 @@ Java Data Adapter and Metadata Adapter
 --------------------------------------
 
 This Data Adapter accepts subscriptions to Items representing stock portfolios and inquiries a (simulated) portfolio feed, getting the current portfolio contents and waiting for update events.
-The  Metadata Adapter is suitable for managing client requests to both the sample Quote Data Adapter and the sample Portfolio Data Adapter.
-It inherits from the LiteralBasedProvider and in addition, it implements the NotifyUserMessage method, in order to handle "sendMessage" requests from the Portfolio Demo client.
+
+The  Metadata Adapter is suitable for managing client requests to both the sample Quote Data Adapter and the sample Portfolio Data Adapter. It inherits from the [LiteralBasedProvider](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java) and in addition, it implements the NotifyUserMessage method, in order to handle "sendMessage" requests from the Portfolio Demo client.
 This allows the Portfolio Demo client to use "sendMessage" in order to submit buy/sell orders to the Portfolio Feed Simulator. The communication to the Portfolio Feed Simulator, through the Portfolio Data Adapter, is handled here.
 
 Configure Lightstreamer
@@ -169,10 +169,10 @@ To allow the two adapters to coexist within the same adapter set, please follow 
 See Also
 --------
 
-* TODO: add link to GitHub project of [Lightstreamer Basic Portfolio Demo Client for JavaScript]
 * [Lightstreamer Portfolio Demo Client for JavaScript](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript)
 * [Lightstreamer Portfolio Demo Client for Dojo](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-dojo)
 * [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)
+* [Lightstreamer Reusable Metadata Adapter in Java](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
 
 Lightstreamer Compatibility Notes
 ---------------------------------
