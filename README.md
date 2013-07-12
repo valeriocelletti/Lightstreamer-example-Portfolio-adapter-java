@@ -24,7 +24,7 @@ See the source code comments for further details.
 # Build #
 
 If you want to skip the build process of this Adapter please note that the "Deployment_LS" folder of this project contains a ready-made deployment resource for the Lightstreamer server.<br>
-Otherwise follow this steps:
+Otherwise follow these steps:
 
 * Get the ls-adapter-interface.jar, ls-generic-adapters.jar, and log4j-1.2.15.jar files from the [latest Lightstreamer distribution](http://www.lightstreamer.com/download) and put these files into lib folder.
 * Create the jars LS_portfolio_metadata_adapter.jar, LS_portfolio_feed_simulator.jar, and LS_portfolio_data_adapter.jar created by something like these commands
