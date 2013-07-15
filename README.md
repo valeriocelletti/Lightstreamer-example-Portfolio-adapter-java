@@ -45,11 +45,23 @@ Otherwise follow these steps:
 # Deploy #
 
 Now you are ready to deploy the Portfolio Demo Adapter into Lighstreamer server.
-After you have Downloaded and installed Lightstreamer, please go to the "adapters" folder of your Lightstreamer Server installation. You should find a "Demo" folder containing some adapter ready-made for several demo including the Portfolio ones, please note that the MetaData Adapter jar installed is a mixed one that combines the functionality of several demos. If this is not your case because you have removed the "Demo" folder or you want to install the Portfolio adapter set alone, please follow this steps to configure the Portfolio adapter properly:
+After you have Downloaded and installed Lightstreamer, please go to the "adapters" folder of your Lightstreamer Server installation. You should find a "Demo" folder containing some adapters ready-made for several demo including the Portfolio ones, please note that the MetaData Adapter jar installed is a mixed one that combines the functionality of several demos. If this is not your case because you have removed the "Demo" folder or you want to install the Portfolio adapter set alone, please follow this steps to configure the Portfolio adapter properly:
 
 1. You have to create a new folder to deploy the portfolio adapters, let's call it "portfolio", and a "lib" folder inside it.
-2. Create an "adapters.xml" file inside the "Portfolio" folder and use a content similar to that of the file in the directory /Deplolyment_LS/Portfolio (this is an example configuration, you can modify it to your liking).
-3. Copy into /Portfolio/lib the jars (LS_portfolio_metadata_adapter.jar, LS_portfolio_feed_simulator.jar, and LS_portfolio_data_adapter.jar) created in the previous section.
+2. Create an "adapters.xml" file inside the "portfolio" folder and use a content similar to that of the file in the directory /Deplolyment_LS/Portfolio (this is an example configuration, you can modify it to your liking).
+3. Copy into /portfolio/lib the jars (LS_portfolio_metadata_adapter.jar, LS_portfolio_feed_simulator.jar, and LS_portfolio_data_adapter.jar) created in the previous section.
+
+Now with the "portfolio" folder obtained on your behalf or with the one in the "Deployment_LS" folder of this project, you must follow these steps:
+
+1. Make sure you have installed Lightstreamer Server, as explained in the GETTING_STARTED.TXT file in the installation home directory.
+2. Make sure that Lightstreamer Server is not running.
+3. Copy the "portfolio" directory and all of its files to the "adapters" subdirectory in your Lightstreamer Server installation home directory.
+4. Copy the "ls-generic-adapters.jar" file from the "lib" directory of the sibling "Reusable_MetadataAdapters" SDK example to the "shared/lib" subdirectory in your Lightstreamer Server installation home directory.
+5. Lightstreamer Server is now ready to be launched.
+
+Please test your Adapter with one of the clients in the [list](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java#clients-using-this-adapter) below.
+
+## Portfolio and StockList Demo Adapters together in the same Adapter Set ##
 
 Please note that to work with fully functionality the [Portfolio Demo](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo) you have to deploy on your Lightstreamer instance the QUOTE_ADAPTER adapter too (see [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)).
 To allow the two adapters to coexist within the same adapter set, please follow the instructions below:
