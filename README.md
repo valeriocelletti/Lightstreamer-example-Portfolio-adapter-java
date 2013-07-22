@@ -1,6 +1,6 @@
 # Lightstreamer Portfolio Demo Adapter #
 
-This project includes the resources needed to develop the Metadata and Data Adaptera for the [Lighstreamer Portfolio Demos]() that is pluggable into Lightstreamer Server. Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.<br>
+This project includes the resources needed to develop the Metadata and Data Adapters for the [Lighstreamer Portfolio Demos]() that is pluggable into Lightstreamer Server. Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.<br>
 The Portfolio Demos simulate portfolio management. They show a list of stocks included in a portfolio and provide a simple order entry form. Changes to portfolio contents due to new orders are displayed on the page in real time.<br>
 <br>
 The project is comprised of source code and a deployment example. The source code is divided into three folders.
