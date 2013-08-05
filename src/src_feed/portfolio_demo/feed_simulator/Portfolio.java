@@ -208,4 +208,23 @@ public class Portfolio {
         //remove the listener
         this.listener = null;
     }
+
+    //never called
+    public synchronized void empty() {
+        logger.debug("Cleaning status " + this.id);
+        
+        final PortfolioListener localListener = this.listener;
+        
+        //remove all the quantities so that the portfolio will result empty
+        quantities.clear();
+        
+        Runnable clearTask = new Runnable() {
+            public void run() {
+                localListener.empty();
+            }
+        };
+        //We add the task on the executor to pass to the listener the actual status
+        executor.execute(clearTask);
+        
+    }
 }

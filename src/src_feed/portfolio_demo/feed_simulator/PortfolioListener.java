@@ -39,5 +39,12 @@ public interface PortfolioListener {
      * if qty is 0 means that the stock was completely sold from the portfolio.
      */
     public void update(String stock, int qty, int oldQty);
+    
+    /**
+     * Called on each new update on the state of the portfolio.
+     * If oldQty is 0 means that the stock wasn't on the portfolio before;
+     * if qty is 0 means that the stock was completely sold from the portfolio.
+     */
+    public void empty();
 
 }

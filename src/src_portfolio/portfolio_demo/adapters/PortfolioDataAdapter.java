@@ -272,6 +272,13 @@ public class PortfolioDataAdapter implements SmartDataProvider {
 
             logger.info(this.portfolioId + ": snapshot sent");
         }
+
+        public void empty() {
+            //tell the server to clean its status
+            listener.smartClearSnapshot(handle);
+            
+            logger.info(this.portfolioId + ": snapshot cleared");
+        }
     }
 
     public void subscribe(String portfolioId, boolean arg1)
