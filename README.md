@@ -202,15 +202,16 @@ To allow the two adapters to coexist within the same adapter set, please follow 
 # See Also #
 
 ## Clients using this Adapter ##
-
 * [Lightstreamer Portfolio Demo Client for JavaScript](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript)
 * [Lightstreamer Portfolio Demo Client for Adobe Flex SDK](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-flex)
 * [Lightstreamer Portfolio Demo Client for Dojo](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-dojo)
 
 ## Related projects ##
-
 * [Lightstreamer Reusable Metadata Adapter in Java](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
 * [Lightstreamer StockList Demo Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)
+
+## The same Demo Adapter with other technologies ##
+* [Lightstreamer Portfolio Demo Adapter for .NET](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-dotnet)
 
 # Lightstreamer Compatibility Notes #
 
