@@ -1,4 +1,4 @@
-# Lightstreamer - Portfolio Demo - Java SE Adapter #
+# Lightstreamer - Portfolio Demo - Java Adapter #
 
 This project includes the resources needed to develop the Metadata and Data Adapters for [Lighstreamer - Basic Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#basic-portfolio-demo) and [Lighstreamer - Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo) that is pluggable into Lightstreamer Server. Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.<br>
 The Portfolio Demos simulate portfolio management. They show a list of stocks included in a portfolio and provide a simple order entry form. Changes to portfolio contents due to new orders are displayed on the page in real time.<br>
@@ -13,7 +13,7 @@ Contains the source code for the Basic Portfolio Demo Data Adapter, a demo Adapt
 It can be referred to as a basic example for Data Adapter development.
 
 ## src_metadata ##
-Contains the source code for a Metadata Adapter to be associated with the Portfolio Demo Data Adapter. This Metadata Adapter inherits from `LiteralBasedProvider` in [Lightstreamer - Reusable Metadata Adapters - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java) and just adds a simple support for order entry by implementing the NotifyUserMessage method, in order to handle "sendMessage" requests from the Portfolio Demo client.
+Contains the source code for a Metadata Adapter to be associated with the Portfolio Demo Data Adapter. This Metadata Adapter inherits from `LiteralBasedProvider` in [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java) and just adds a simple support for order entry by implementing the NotifyUserMessage method, in order to handle "sendMessage" requests from the Portfolio Demo client.
 The communication to the Portfolio Feed Simulator, through the Portfolio Data Adapter, is handled here.<br>
 It should not be used as a reference for a real case of client-originated message handling, as no guaranteed delivery and no clustering support is shown.
 <br>
@@ -119,7 +119,7 @@ Please test your Adapter with one of the clients in the [list](https://github.co
 
 ## Portfolio and StockList Demo Adapters together in the same Adapter Set ##
 
-Please note that to work with fully functionality the [Lightstreamer - Portfolio Demos - HTML Clients](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo), you have to deploy on your Lightstreamer instance the QUOTE_ADAPTER adapter too (see [Lightstreamer - Stock-List Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)).
+Please note that to work with fully functionality the [Lightstreamer - Portfolio Demos - HTML Clients](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo), you have to deploy on your Lightstreamer instance the QUOTE_ADAPTER adapter too (see [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)).
 To allow the two adapters to coexist within the same adapter set, please follow the instructions below:
 
 1. Create a new folder in  "<LS_HOME>/adapters" , let's call it "demo".
@@ -208,8 +208,8 @@ To allow the two adapters to coexist within the same adapter set, please follow 
 * [Lightstreamer - Portfolio Demo - Dojo Toolkit Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-dojo)
 
 ## Related projects ##
-* [Lightstreamer - Reusable Metadata Adapters - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
-* [Lightstreamer - Stock-List Demo - Java SE Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)
+* [Lightstreamer - Reusable Metadata Adapters - Java Adapter](https://github.com/Weswit/Lightstreamer-example-ReusableMetadata-adapter-java)
+* [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)
 
 ## The same Demo Adapter with other technologies ##
 * [Lightstreamer - Portfolio Demo - .NET Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-dotnet)
