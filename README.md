@@ -56,7 +56,7 @@ You have to create a specific folder to deploy the Portfolio Adapter otherwise g
 <?xml version="1.0"?>
 
 <!-- Mandatory. Define an Adapter Set and sets its unique ID. -->
-<adapters_conf id="DEMO">
+<adapters_conf id="PORTFOLIODEMO">
 
     <!-- Mandatory. Define the Metadata Adapter. -->
     <metadata_provider>
