@@ -1,5 +1,5 @@
 # Lightstreamer - Portfolio Demo - Java Adapter #
-<!-- START DESCRIPTION Portfolio Demo -->
+<!-- START DESCRIPTION lightstreamer-example-portfolio-adapter-java -->
 
 This project includes the resources needed to develop the Metadata and Data Adapters for [Lighstreamer - Basic Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#basic-portfolio-demo) and [Lighstreamer - Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo) that is pluggable into Lightstreamer Server. Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.<br>
 The Portfolio Demos simulate portfolio management. They show a list of stocks included in a portfolio and provide a simple order entry form. Changes to portfolio contents due to new orders are displayed on the page in real time.<br>
@@ -20,7 +20,7 @@ It should not be used as a reference for a real case of client-originated messag
 <br>
 <br>
 See the source code comments for further details.
-<!-- END DESCRIPTION Portfolio Demo -->
+<!-- END DESCRIPTION lightstreamer-example-portfolio-adapter-java -->
 
 
 # Build #
