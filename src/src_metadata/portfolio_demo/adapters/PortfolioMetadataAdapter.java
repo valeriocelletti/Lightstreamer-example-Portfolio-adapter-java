@@ -44,12 +44,6 @@ import com.lightstreamer.interfaces.metadata.NotificationException;
  * in order to submit buy/sell orders to the Portfolio Feed Simulator.
  * The communication to the Portfolio Feed Simulator, through the
  * Portfolio Data Adapter, is handled here.
- *
- * This is only in order to simplify deployment; in this way, client
- * order notifications are handled by Lightstreamer Server, without the
- * need for an additional server to provide the return channel.
- * Please, consider that it is not recommended to use "sendMessage"
- * as a return channel in a real case scenario.
  */
 public class PortfolioMetadataAdapter extends LiteralBasedProvider {
 
