@@ -223,4 +223,4 @@ To allow the two adapters to coexist within the same adapter set, please follow 
 
 # Lightstreamer Compatibility Notes #
 
-- Compatible with Lightstreamer SDK for Java Adapters since 5.1
+- Compatible with Lightstreamer SDK for Java Adapters since 6.0
