@@ -209,7 +209,7 @@ public class Portfolio {
         this.listener = null;
     }
 
-    //never called
+    // never called in the demo, just showing the feature
     public synchronized void empty() {
         logger.debug("Cleaning status " + this.id);
         
