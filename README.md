@@ -1,10 +1,10 @@
 # Lightstreamer - Portfolio Demo - Java Adapter
 <!-- START DESCRIPTION lightstreamer-example-portfolio-adapter-java -->
-The *Portfolio Demo* simulate a portfolio management: it shows a list of stocks included in a portfolio and provide a simple order entry form. Changes to portfolio contents due to new orders are displayed on the page in real time. In addition to that the *Full Version of the Portfolio Demo* shows for each stock in the portfolio also the current price, updated in real time from a market data feed.
+The *Portfolio Demo* simulate a portfolio management: it shows a list of stocks included in a portfolio and provide a simple order entry form. Changes to portfolio contents, due to new orders, are displayed on the page in real time. In addition to that the *Full Version of the Portfolio Demo* shows for each stock in the portfolio also the current price, updated in real time from a market data feed.
 
-This project shows the Java Metadata and Data Adapters for the *Portfolio Demo* and how they can be plugged into Lightstreamer Server. It shows also how to integrate the [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java) into the same Adapter Set to support the *Full Version of the Portfolio Demo*.   
+This project shows the Java Metadata and Data Adapters for the *Portfolio Demo* and how they can be plugged into Lightstreamer Server. It shows also how to integrate the [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java) into the same Adapter Set to support the full version of the *Portfolio Demo*.   
 
-As example of [Clients Using This Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java#clients-using-this-adapter), you may refer to the [Basic Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#basic-portfolio-demo---html-client) and view the corresponding [Basic Portfolio Demo Live Demo](http://demos.lightstreamer.com/PortfolioDemo_Basic/) or you may refer to the [Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo---html-client) and view the corresponding [Portfolio Demo Live Demo](http://demos.lightstreamer.com/PortfolioDemo/) for the *Full Version of the Portfolio Demo*.
+As example of [Clients Using This Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java#clients-using-this-adapter), you may refer to the [Basic Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#basic-portfolio-demo---html-client) and view the corresponding [Basic Portfolio Demo Live Demo](http://demos.lightstreamer.com/PortfolioDemo_Basic/) or you may refer to the [Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo---html-client) and view the corresponding [Portfolio Demo Live Demo](http://demos.lightstreamer.com/PortfolioDemo/) for the full version of the *Portfolio Demo*.
 
 ## Details
 
@@ -85,7 +85,7 @@ The `adapters.xml` file for the Basic Portfolio Demo, should look like:
 </adapters_conf>
 ```
 
-The *Full Version of the Portfolio Demo* needs the Portfolio and the StockList demo adapters together in the same Adapter Set. 
+The *full version of the Portfolio Demo* needs the Portfolio and the StockList demo adapters together in the same Adapter Set. 
 
 The `adapters.xml` file for the Portfolio Demo, should look like:
 ```xml 
