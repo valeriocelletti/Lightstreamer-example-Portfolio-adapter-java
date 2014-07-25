@@ -116,7 +116,7 @@ Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Pr
 
 ## Install
 
-### Basic Portfolio Demo
+### Install the Basic Portfolio Demo
 If you want to install a basic version of the *Portfolio Demo* in your local Lightstreamer Server, follow these steps.
 * Download *Lightstreamer Server* (Lightstreamer Server comes with a free non-expiring demo license for 20 connected users) from [Lightstreamer Download page](http://www.lightstreamer.com/download.htm), and install it, as explained in the `GETTING_STARTED.TXT` file in the installation home directory.
 * Make sure that Lightstreamer Server is not running.
@@ -125,7 +125,7 @@ If you want to install a basic version of the *Portfolio Demo* in your local Lig
 * Launch Lightstreamer Server.
 * Test the Adapter, launching the [Basic Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#basic-portfolio-demo---html-client) listed in [Clients Using This Adapter](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java#clients-using-this-adapter).
 
-### Portfolio Demo
+### Install the Portfolio Demo
 To work with fully functionality, the [Portfolio Demo - HTML Client](https://github.com/Weswit/Lightstreamer-example-Portfolio-client-javascript#portfolio-demo---html-client), needs both the *PORTFOLIO_ADAPTER*, from the *Portfolio Demo*, and the *QUOTE_ADAPTER*, from the *Stock-List Demo* (see [Lightstreamer - Stock-List Demo - Java Adapter](https://github.com/Weswit/Lightstreamer-example-StockList-adapter-java)). 
 Moreover, if you want to install a full version of the *Portfolio Demo* in your local Lightstreamer Server, you have to deploy the *PORTFOLIO_ADAPTER* and the *QUOTE_ADAPTER* together in the same Adapter Set. 
 To allow the two adapters to coexist within the same Adapter Set, please follow the steps below.
