@@ -114,6 +114,9 @@ The `adapters.xml` file for the Portfolio Demo, should look like:
 
 Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.
 
+**NOTE: At this stage, the demo is based on a version of LS Java Adapter SDK that is currently available only as a prerelease. Skip the notes below and refer to the "for_Lightstreamer_5.1.2" tag for a demo version suitable for building and deploying.**
+<!-- END DESCRIPTION lightstreamer-example-chat-adapter-java -->
+
 ## Install
 
 ### Install the Basic Portfolio Demo
@@ -175,3 +178,4 @@ To build your own version of `LS_portfolio_feed_simulator.jar`, `LS_portfolio_da
 ## Lightstreamer Compatibility Notes
 
 - Compatible with Lightstreamer SDK for Java Adapters since 6.0
+- For a version of this example compatible with Lightstreamer SDK for Java Adapters version 5.1.2, please refer to [this tag](https://github.com/Weswit/Lightstreamer-example-Portfolio-adapter-java/releases/tag/for_Lightstreamer_5.1.2).
