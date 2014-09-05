@@ -115,7 +115,6 @@ The `adapters.xml` file for the Portfolio Demo, should look like:
 Please refer [here](http://www.lightstreamer.com/latest/Lightstreamer_Allegro-Presto-Vivace_5_1_Colosseo/Lightstreamer/DOCS-SDKs/General%20Concepts.pdf) for more details about Lightstreamer Adapters.
 
 **NOTE: At this stage, the demo is based on a version of LS Java Adapter SDK that is currently available only as a prerelease. Skip the notes below and refer to the "for_Lightstreamer_5.1.2" tag for a demo version suitable for building and deploying.**
-<!-- END DESCRIPTION lightstreamer-example-chat-adapter-java -->
 
 ## Install
 
